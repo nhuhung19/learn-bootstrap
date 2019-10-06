@@ -1,68 +1,127 @@
 <!DOCTYPE html>
 <html >
 <head>
+   
     <title>Demo Index</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="vendors/linericon/style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-    <link rel="stylesheet" href="vendors/animate-css/animate.css">
-    <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
-    <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
-    <!-- main css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .figure {
+            float: left;
+            width: 50%;
+        }
+        .figure img {
+            width: 100%;
+        }
+        .contant {
+            float: right;
+            width: 40%;
+        }
+        .container {
+            background-color: rgb(237, 250, 250);
+        }
+        body {
+            background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+        }
+
+        .clearfix::after { /* Pseudo element */
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+        }
+
+        /* header {
+            height: 120px;
+        } */
+
+        .header__logo {
+            float: left;
+            height: 100%;
+        }
+        /* .header__logo__text {
+            margin: 0;
+            padding: 0;
+            line-height: 120px;
+            color: white;
+            text-transform: uppercase;
+        } */
+        .header__logo__text {
+            /* margin-left: 100px;
+            margin-top: 40px; 
+            margin-bottom: 40px; */
+            margin: 40px 100px 40px;
+        }
+
+        .header__menu__item {
+            display: inline-block;
+            margin-right: 20px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .header__menu {
+            float: right;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            
+        }
+        /* .header__menu__item {
+            display: inline-block;
+            margin-right: 10px;
+            height: 100%;
+            line-height: 120px;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        } */
+        .header__menu__item:hover {
+            text-decoration: underline;
+        }
+        /* .header__menu__item:nth-child(2n) { */
+        .header__menu__item:nth-child(even) {
+            color: violet;
+        }
+        /* .header__menu__item:nth-child(2n+1) { */
+        .header__menu__item:nth-child(odd) {
+            color: red;
+        }
+        
+    </style>
 </head>
 <body>
-<div class= container>
-    <nav class="navbar navbar-default">
-        <div class="navbar-header" href="#">
-            <a class="navbar-brand" href="#">MeetMe</a>
-        </div>
-        <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-</div>
-<div class="container">
-<div class="jumbotron">
-    <table>
-    <tr>
-        <th><img src="img/personal.jpg"></th>
-        <th><p>HELLO EVERYBODY, I AM</p></th>
-    </tr>
-    <tr>
-        <th> </th>
-        <th><H1>DONALD MCKINKEY</H1>
-        </th>
-    </tr>
-    <tr>
-        <th> </th>
-        <th> <h4>JUNIOR UI/UX DEVELOPER</h4> </th>
-    </tr>
-    <tr>
-        <th> </th>
-        <th><p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p></th>
-    </tr>
-    <tr>
-        <th> </th>
-        <th><ul>
-            <li><i class="lnr lnr-calendar-full "></i>31st Decamber,1992</li>
-            <li><i class="lnr lnr-phone-handset "></i>44 (012) 6954 783</li>
-            <li><i class="lnr lnr-envelope "></i>businessplan@donald</li>
-            <li><i class="lnr lnr-home "></i>Santa monica bullevard</li>
-        </ul></th>
-    </tr>
-</table>
-</div>
-</div>
 
+<header class="clearfix">
+    <div class="header__logo">
+        <h2 class="header__logo__text">MeetMe</h2>
+    </div>
+    <nav class="header__menu">
+        <a href="#" class="header__menu__item">Home</a>
+        <a href="#" class="header__menu__item">About</a>
+        <a href="#" class="header__menu__item">Service</a>
+        <a href="#" class="header__menu__item">Pages</a>
+        <a href="#" class="header__menu__item">Blog</a>
+        <a href="#" class="header__menu__item">Contact</a>
+    </nav>
+</header>
+
+
+<div class="container clearfix">
+    <section class="figure">
+        <img id="avatar" src="img/personal.jpg">
+    </section>
+    <section class="contant">
+        <p>HELLO EVERYBODY, I AM</p>
+        <h1>DONALD MCKINNEY</h1>
+        <h4>JUNIOR UI/UX DEVELOPER</h4>
+        <p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)
+        </p>
+        <ul>
+            <li><i class="lnr lnr-calendar-full"></i> 31st December, 1992</li>
+            <li><i class="lnr lnr-phone-handset"></i> 44 (012) 6954 783</li>
+            <li><i class="lnr lnr-envelope"></i> businessplan@donald</li>
+            <li><i class="lnr lnr-home"></i> Santa monica bullevard</li>
+        </ul>
+    </section>
+</div>
 </body>
 </html>

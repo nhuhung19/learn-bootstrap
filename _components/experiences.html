@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body {
+        background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+        color: white;
+     }
+    
+    .timeline {
+        width: 460px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .experiences {
+        width: 600px;
+        margin-right: auto;
+        margin-left: 100px;
+        position: relative;
+    }
+    .line {
+        width: 5px;
+        height: 511px;
+        background: rgba(255,255,255,0.5);
+        position: absolute;
+        left: 46%;
+    }
+    .dot {
+        background: rgba(255,255,255,0.5);
+        width: 15px;
+        height: 15px;
+        border-radius: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        
+    }
+    .dot::after {
+        content: '';
+        display: block;
+        background: rgba(255,255,255,1);
+        width: 50%;
+        height: 50%;
+        border-radius: 100%;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .dot-relative--lg {
+        background: rgba(255,255,255,0.5);
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+    }
+    .dot-relative__core--lg {
+        background: rgba(255,255,255,1);
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+
+    .dot-absolute--lg {
+        background: rgba(255,255,255,0.5);
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    .dot-absolute__core--lg {
+        background: rgba(255,255,255,1);
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .dot-translate--lg {
+        background: rgba(255,255,255,0.5);
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    .dot-translate--lg::after {
+        content: '';
+        display: block;
+        background: rgba(255,255,255,1);
+        width: 50%;
+        height: 50%;
+        border-radius: 100%;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    </style>
+</head>
+<body>
+    <div class="dot-translate--lg">
+        <!-- <div class="dot-translate__core--lg"></div> -->
+    </div>
+
+    <div class="dot-absolute--lg">
+        <div class="dot-absolute__core--lg"></div>
+    </div>
+
+    <div class="dot-relative--lg">
+        <div class="dot-relative__core--lg"></div>
+    </div>
+
+<div class="experiences">
+    <div class="line"></div>
+    <div class="dot" style="left: 271px; top: 15%;"></div>
+    <div class="dot" style="left: 271px; top: 49%;"></div>
+    <div class="dot" style="left: 271px; top: 81%;"></div>
+    <table class="timeline">
+        <tr>
+            <td style="width: 250px;">March 2017 to present</td>
+            <td>
+               <h3>COLORLIB</h3>
+               <p>Senior Web Developer</p>
+                <p>Santa monica, Los angeles</p>
+            </td>
+       </tr>
+       <tr>
+           <td style="width: 250px;">March 2017 to present</td>
+           <td>
+               <h3>COLORLIB</h3>
+               <p>Senior Web Developer</p>
+                <p>Santa monica, Los angeles</p>
+            </td>
+       </tr>
+       <tr>
+           <td style="width: 250px;">March 2017 to present</td>
+           <td>
+               <h3>COLORLIB</h3>
+               <p>Senior Web Developer</p>
+                <p>Santa monica, Los angeles</p>
+            </td>
+       </tr>
+   </table>
+</div>
+</body>
+</html>
