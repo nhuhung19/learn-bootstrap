@@ -1,0 +1,59 @@
+.experiences {
+    text-align: center;
+    margin-bottom: 70px;
+    padding-top: 50px;
+}
+
+.timeline {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 500px;
+}
+
+.timeline__period {
+    color: white;
+    position: relative;
+}
+
+.timeline__period__time {
+    float: left;
+    width: 220px;
+    margin-top: 70px;
+}
+
+.timeline__period__job {
+    float: right;
+}
+
+.timeline__column {
+    background: rgba(255, 255, 255, 0.2);
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+}
+
+.timeline__dot {
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    left: 49%;
+    top: 50%;
+    border-radius: 15px;
+    width: 15px;
+    height: 15px;
+}
+
+.timeline__dot__small {
+    background: white;
+    position: absolute;
+    left: 29%;
+    top: 27%;
+    border-radius: 7px;
+    width: 7px;
+    height: 7px;
+}
+
+.experiences__button {
+    border-radius: 5px;
+}

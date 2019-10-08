@@ -4,107 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        body {
-            background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
-        }
-        .clearfix::after {
-            content: '';
-            display: block;
-            height: 0;
-            clear: both;
-        }
-        .head {
-            float: left;
-            margin-left: 30px;
-            height: 120px;
-            line-height: 100%;
-            
-        }
-        .head__title {
-            text-decoration: none;
-        }
-        
-        .menu {
-            float: right;
-            height: 120px;
-            
-            
-        }
-        .menu__element {
-            margin-right: 30px;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        .menu__element__item {
-            padding-left: 35px;
-            color: white;
-            text-decoration: none;  
-        }
-        .article {
-            margin: 30px auto;
-            background: #fff;
-            width: 1170px;
-            height: 680px;
-            border-radius: 20px;
-        }
-        .article__content {
-            margin-top: 40px;
-            float: right;
-            width: 40%;
-            margin-left: 40px;
-            margin-right: 20px;
-        }
-        .article__img {
-            margin-top: 30px;
-            margin-left: 30px;
-            width: 50%;
-            float: left;
-        }
-        img {
-            width: 100%;
-        }
-        .article__content__text {
-             color: #777777;
-        }
-    </style>
+    <title>Index</title>
+    <link href="../css/appbar.css" rel="stylesheet" >
 </head>
 <body>
-<div class="clearfix">
-    <header class="head">
-        <h2><a class="head__title"href="#" style="color: white" >MEETME</a></h2>
-    </header>
-    <div class="menu">
-        <nav class="menu__element">
-            <a href="#" class="menu__element__item">Home</a>
-            <a href="#" class="menu__element__item">About</a>
-            <a href="#" class="menu__element__item">Service</a>
-            <a href="#" class="menu__element__item">Pages</a>
-            <a href="#" class="menu__element__item">Blog</a>
-            <a href="#" class="menu__element__item">Contact</a>
-        </nav>
+<section>
+    <div class="clearfix">
+        <div class="logo">
+            <h2><a class="logo__title"href="#" style="color: white" >MEETME</a></h2>
+        </div>
+        <div class="menu">
+            <nav class="menu__element">
+                <a href="#" class="menu__element__item">Home</a>
+                <a href="#" class="menu__element__item">About</a>
+                <a href="#" class="menu__element__item">Service</a>
+                <a href="#" class="menu__element__item">Pages</a>
+                <a href="#" class="menu__element__item">Blog</a>
+                <a href="#" class="menu__element__item">Contact</a>
+            </nav>
+        </div>
     </div>
-</div>
-<div class="clearfix">
-    <section class="article">
-        <div class="article__img">
-            <img src="../img/personal.jpg">
-        </div>
-        <div class="article__content">
-            <p>HELLO EVERYBODY, I AM</p>
-            <h1>DONALD MCKINNEY</h1>
-            <h3>JUNIOR UI/UX DEVELOPER</h3>
-            <p class="article__content__text">You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)
-            </p>
-        <ul>
-            <a><li class="article__content__text">31st December, 1992</li></a>
-            <a><li class="article__content__text">44 (012) 6954 783</li></a>
-            <a><li class="article__content__text">businessplan@donald</li></a>
-            <a><li class="article__content__text">Santa monica bullevard</li></a>
-        </ul>
-        </div>
+    <section class="article clearfix">
+    <div class="article__img">
+        <img src="../img/personal.jpg">
+    </div>
+    <div class="article__content">
+        <p>HELLO EVERYBODY, I AM</p>
+        <h1>DONALD MCKINNEY</h1>
+        <h3>JUNIOR UI/UX DEVELOPER</h3>
+        <p class="article__content__text">You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)
+        </p>
+    <ul>
+        <a><li class="article__content__text">31st December, 1992</li></a>
+        <a><li class="article__content__text">44 (012) 6954 783</li></a>
+        <a><li class="article__content__text">businessplan@donald</li></a>
+        <a><li class="article__content__text">Santa monica bullevard</li></a>
+    </ul>
+    </div>
     </section>
-</div>
+</section>
 </body>
 </html>

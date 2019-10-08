@@ -1,0 +1,61 @@
+.appbar {
+    padding-bottom: 50px;
+}
+
+.logo {
+    float: left;
+    margin-left: 30px;
+    height: 120px;
+    line-height: 100%;
+}
+
+.logo__title {
+    text-decoration: none;
+}
+
+.menu {
+    float: right;
+    height: 120px;
+}
+
+.menu__element {
+    margin-right: 30px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.menu__element__item {
+    padding-left: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+.appbar__profile {
+    margin: 30px auto;
+    background: #fff;
+    width: 1620px;
+    height: 680px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 40px; 
+}
+
+.appbar__profile__content {
+    margin-top: 40px;
+    float: right;
+    width: 40%;
+    margin-left: 40px;
+    margin-right: 20px;
+    color: #777777;
+}
+
+.appbar__profile__avatar {
+    float: left;
+    height: 100%;
+    width: 40%;
+    overflow: hidden;
+}
+
+.appbar__profile__avatar img {
+    width: 100%;
+}

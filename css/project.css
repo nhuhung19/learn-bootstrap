@@ -1,0 +1,44 @@
+.project {
+    padding: 100px 0;
+}
+.project__menu {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.project__menu__item {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+.project__showcase__block {
+    float: left;
+    width: 30%;
+    margin-left: 2.5%;
+    text-align: center;
+}
+
+.project__showcase__block img {
+    width: 340px;
+}
+
+.project__showcase__block p {
+    color: #777777;
+    text-align: center;
+}
+
+.project__showcase__block h2 {
+    text-align: center;
+}
+
+.experiences__loadmore {
+    background-image: linear-gradient(to right, #766dff 0%, #86e8ff 48%, #766dff 100%);
+    color: #fff;
+    line-height: 48px;
+    width: 180px;
+    border-radius: 5px;
+}

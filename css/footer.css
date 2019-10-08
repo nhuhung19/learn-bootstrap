@@ -1,0 +1,37 @@
+footer {
+    background-color: #000;
+    height: 182px;
+    padding: 100px 0;
+}
+
+.footer__content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__aboutme {
+    float: left;
+    width: 457px;
+    margin: 0 10px;
+}
+
+.footer__newletter {
+    float: left;
+    width: 457px;
+    margin: 0 10px;
+}
+
+.footer__fllow {
+    float: left;
+    width: 195px;
+    margin: 0 10px;
+}
+
+p {
+    color: #777777;
+}
+
+h2 {
+    color: #fff;
+}
