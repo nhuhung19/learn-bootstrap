@@ -3,20 +3,18 @@
     margin-right: auto;
     margin-top: 100px; */
     margin: 100px auto 50px;
-    width: 1170px;
 }
 
 .article {
-    float: left;
-    width: 45%;
+    /* float: left;
+    width: 45%; */
 }
 
 .achievement-box {
-    float: left;
-    width: 120px;
+    /* width: 120px; */
+    
     height: 122px;
     padding-left: 10px;
-    margin-left: 30px;
     border: 1px solid #c7c3c3;
 }
 
@@ -31,10 +29,19 @@
 }
 
 .main {
-    float: right;
-    width: 45%;
+    /* width: 45%; */
 }
 
 .main__progress {
     border-radius: 14px;
+}
+
+@media (min-width: 992px) {
+    
+    .achievement-box {
+        flex: 0 0 150px;
+    }
+    .about {
+        width: 1170px;
+    }
 }

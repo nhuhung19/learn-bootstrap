@@ -1,6 +1,39 @@
 .appbar {
     padding-bottom: 50px;
+    background: transparent;
 }
+
+.appbar .navbar .nav-item {
+    margin-right: 20px;
+}
+
+.nav-item:hover {
+    text-decoration: none;
+
+}
+
+.navbar {
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-brand:hover {
+    text-decoration: underline;
+    color: white;
+   
+}
+
 
 .logo {
     float: left;
@@ -11,6 +44,8 @@
 
 .logo__title {
     text-decoration: none;
+    height: 120px;
+    line-height: 120px;
 }
 
 .menu {
@@ -19,12 +54,15 @@
 }
 
 .menu__element {
+    
     margin-right: 30px;
     display: inline-block;
-    margin-top: 20px;
+
 }
 
 .menu__element__item {
+    height: 120px;
+    line-height: 120px;
     padding-left: 35px;
     color: white;
     text-decoration: none;
@@ -33,29 +71,33 @@
 .appbar__profile {
     margin: 30px auto;
     background: #fff;
-    width: 1620px;
-    height: 680px;
-    border-radius: 20px;
-    box-sizing: border-box;
-    padding: 40px; 
+    border-radius: 20px; 
+    padding: 10px;
 }
 
 .appbar__profile__content {
-    margin-top: 40px;
-    float: right;
-    width: 40%;
-    margin-left: 40px;
-    margin-right: 20px;
+    padding: 40px 20px 0 40px;
     color: #777777;
 }
 
 .appbar__profile__avatar {
-    float: left;
     height: 100%;
-    width: 40%;
     overflow: hidden;
 }
 
 .appbar__profile__avatar img {
     width: 100%;
+}
+
+@media (min-width: 992px) {
+    
+    .appbar__profile {
+        width: 1170px;
+        padding: 40px;
+    }
+
+    .navbar {
+        width: 1170px;
+    }
+
 }

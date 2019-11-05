@@ -6,19 +6,21 @@
     margin-bottom: 50px;
     text-align: center;
 }
-
+h5 {
+    margin-top: 10px;
+    font-weight: bold;
+}
 .project__menu__item {
     color: black;
     text-decoration: none;
     display: inline-block;
     margin-left: 40px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .project__showcase__block {
-    float: left;
-    width: 30%;
-    margin-left: 2.5%;
+    /* float: left;
+    width: 30%; */
     text-align: center;
 }
 
@@ -31,8 +33,40 @@
     text-align: center;
 }
 
-.project__showcase__block h2 {
+.project__showcase__block h3 {
     text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.project__showcase__block h3:hover {
+    color: purple;
+}
+
+/* .project__showcase__overlay {
+    opacity: 0;
+
+}
+
+.project__showcase__block:hover .project__showcase__overlay {
+    opacity: 0.85;
+} */
+
+.project__showcase__block::before {
+    content: '';
+    opacity: 0;
+}
+
+.project__showcase__block:hover .project__showcase__block:hover::before {
+    content: '';
+    opacity: 0.85;
+}
+
+a {
+    font-weight: 600;
+}
+a:hover {
+    text-decoration: none;
 }
 
 .experiences__loadmore {

@@ -3,84 +3,113 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>project</title>
-    <link href="../css/global.css" rel="stylesheet">
-    <link href="../css/appbar.css" rel="stylesheet">
-    <link href="../css/about.css" rel="stylesheet">
-    <link href="../css/experiences.css" rel="stylesheet">
-    <link href="../css/service.css" rel="stylesheet">
-    <link href="../css/testimonial.css" rel="stylesheet">
-    <link href="../css/project.css" rel="stylesheet">
-    <link href="../css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/appbar.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+    <link href="css/experiences.css" rel="stylesheet">
+    <link href="css/service.css" rel="stylesheet">
+    <link href="css/testimonial.css" rel="stylesheet">
+    <link href="css/project.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="vendors/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
 </head>
 
 <body>
     <section class="appbar">
-        <div class="clearfix">
-            <div class="logo">
-                <h2><a class="logo__title" href="#" style="color: white">MEETME</a></h2>
-            </div>
-            <div class="menu">
-                <nav class="menu__element">
-                    <a href="#" class="menu__element__item">Home</a>
-                    <a href="#" class="menu__element__item">About</a>
-                    <a href="#" class="menu__element__item">Service</a>
-                    <a href="#" class="menu__element__item">Pages</a>
-                    <a href="#" class="menu__element__item">Blog</a>
-                    <a href="#" class="menu__element__item">Contact</a>
-                </nav>
-            </div>
-        </div>
-        <section class="appbar__profile clearfix">
-            <div class="appbar__profile__avatar">
-                <img src="../img/personal.jpg">
-            </div>
-            <div class="appbar__profile__content">
-                <p>HELLO EVERYBODY, I AM</p>
-                <h1>DONALD MCKINNEY</h1>
-                <h3>JUNIOR UI/UX DEVELOPER</h3>
-                <p class="article__content__text">You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)
-                </p>
-                <ul>
-                    <a>
-                        <li class="article__content__text">31st December, 1992</li>
-                    </a>
-                    <a>
-                        <li class="article__content__text">44 (012) 6954 783</li>
-                    </a>
-                    <a>
-                        <li class="article__content__text">businessplan@donald</li>
-                    </a>
-                    <a>
-                        <li class="article__content__text">Santa monica bullevard</li>
-                    </a>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">MeetMe</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                
                 </ul>
+            </div>
+        </nav>
+        <section class="appbar__profile container">
+            <div class="row">
+                <div class="appbar__profile__avatar col-12 col-lg-6">
+                    <img src="img/personal.jpg">
+                </div>
+                <div class="appbar__profile__content col-12 col-lg-6">
+                    <p>HELLO EVERYBODY, I AM</p>
+                    <h5>DONALD MCKINNEY</h5>
+                    <h5>JUNIOR UI/UX DEVELOPER</h5>
+                    <form>
+                        <div class="form-group">
+                          <label for="email">Email address</label>
+                          <input value="nhuhung19@gmail.com" type="email" id="email" name="Email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="password">Password</label>
+                          <input value="abcxyz" id="password" name="Pass" type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                          <label for="phone">Phone No.</label>
+                          <input id="phone" name="Phone" type="text" class="form-control" placeholder="Your cellphone">
+                        </div>
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="check">
+                          <label class="form-check-label" for="check">Check me out</label>
+                        </div>
+                        <!-- <button class="btn btn-primary" id="submit">Submit</button> -->
+                        <input type="button" id="submit" value="Submit" class="btn btn-primary">
+                        <input type="button" id="reset" value="Reset" class="btn btn-warning">
+                      </form>
+                      
+                </div>
             </div>
         </section>
     </section>
 
-    <section class="about clearfix">
-        <article class="article">
+    <section class="about container">
+        <div class="row">
+        <article class="article  col-12 col-lg-6 ">
             <h1>ABOUT MYSELF</h1>
             <p class="article__content" style="color: #777777;">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior
                 is often laughed.
             </p>
-            <div class="achievement-box">
-                <p class="achievement-box__figure">$2.5M</p>
-                <p class="achievement-box__desc">Total Donation</p>
-            </div>
-            <div class="achievement-box">
-                <p class="achievement-box__figure">1465</p>
-                <p class="achievement-box__desc">Total Projects</p>
-            </div>
-            <div class="achievement-box">
-                <p class="achievement-box__figure">3965</p>
-                <p class="achievement-box__desc">Total Volunteers</p>
+            <div class="row  justify-content-between">
+                <div class="achievement-box col-12 col-lg-4">
+                    <p class="achievement-box__figure">$2.5M</p>
+                    <p class="achievement-box__desc">Total Donation</p>
+                </div>
+                <div class="achievement-box col-12 col-lg-4">
+                    <p class="achievement-box__figure">1465</p>
+                    <p class="achievement-box__desc">Total Projects</p>
+                </div>
+                <div class="achievement-box col-12 col-lg-4">
+                    <p class="achievement-box__figure">3965</p>
+                    <p class="achievement-box__desc">Total Volunteers</p>
+                </div>
             </div>
         </article>
-        <main class="main">
+        <main class="main col-12 col-lg-6">
             <p>After Effects 85%</p>
             <div class="main__progress" style="width: 100%; height: 14px; border: 1px solid #eeeeee;; padding: 4px 2px 1px;">
                 <div class="main__progress" style="width: 100%; height: 10px; background: #777777;">
@@ -112,47 +141,91 @@
                 </div>
             </div>
         </main>
+    </div>
     </section>
 
-    <section class="experiences">
-        <button class="experiences__button" style="height: 35px; color: white; background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%); width: 170px">My Experiences </button>
-        <button class="experiences__button" style="height: 35px; background:white; width: 170px">My Education</button>
+    <section class="experiences contanier">
+        <button id="btnExp" class="experiences__button">My Experiences </button>
+        <button id="btnEdu" class="experiences__button">My Education</button>
 
-        <div class="timeline">
+        <div id="timelineExp" class="timeline container">
             <div class="timeline__column"></div>
 
-            <div class="timeline__period clearfix">
+            <div class="timeline__period row">
+                <div class="timeline__dot ">
+                    <div class="timeline__dot__small"></div>
+                </div>
+
+                <div class="timeline__period__time col-12 col-lg-5">March 2017 to present</div>
+                <div class="timeline__period__job col-12 col-lg-5">
+                    <h2>EXPERIENCES</h2>
+                    <p>Senior Web Developer</p>
+                    <p>Santa monica, Los angeles</p>
+                </div>
+            </div>
+
+            <div class="timeline__period row">
                 <div class="timeline__dot">
                     <div class="timeline__dot__small"></div>
                 </div>
 
-                <div class="timeline__period__time">March 2017 to present</div>
-                <div class="timeline__period__job">
+                <div class="timeline__period__time col-12 col-lg-5">March 2017 to present</div>
+                <div class="timeline__period__job col-12 col-lg-5">
                     <h2>COLORLIB</h2>
                     <p>Senior Web Developer</p>
                     <p>Santa monica, Los angeles</p>
                 </div>
             </div>
 
-            <div class="timeline__period clearfix">
+            <div class="timeline__period row">
                 <div class="timeline__dot">
                     <div class="timeline__dot__small"></div>
                 </div>
-
-                <div class="timeline__period__time">March 2017 to present</div>
-                <div class="timeline__period__job">
+                <div class="timeline__period__time col-12 col-lg-5">March 2017 to present</div>
+                <div class="timeline__period__job col-12 col-lg-5">
                     <h2>COLORLIB</h2>
                     <p>Senior Web Developer</p>
                     <p>Santa monica, Los angeles</p>
                 </div>
             </div>
 
-            <div class="timeline__period clearfix">
+
+        </div>
+        <div id="timelineEdu" class="timeline container">
+            <div class="timeline__column"></div>
+
+            <div class="timeline__period row">
+                <div class="timeline__dot ">
+                    <div class="timeline__dot__small"></div>
+                </div>
+
+                <div class="timeline__period__time col-12 col-lg-5">March 2017 to present</div>
+                <div class="timeline__period__job col-12 col-lg-5">
+                    <h2>EDUCATION</h2>
+                    <p>Senior Web Developer</p>
+                    <p>Santa monica, Los angeles</p>
+                </div>
+            </div>
+
+            <div class="timeline__period row">
                 <div class="timeline__dot">
                     <div class="timeline__dot__small"></div>
                 </div>
-                <div class="timeline__period__time">March 2017 to present</div>
-                <div class="timeline__period__job">
+
+                <div class="timeline__period__time col-12 col-lg-5">March 2017 to present</div>
+                <div class="timeline__period__job col-12 col-lg-5">
+                    <h2>COLORLIB</h2>
+                    <p>Senior Web Developer</p>
+                    <p>Santa monica, Los angeles</p>
+                </div>
+            </div>
+
+            <div class="timeline__period row">
+                <div class="timeline__dot">
+                    <div class="timeline__dot__small"></div>
+                </div>
+                <div class="timeline__period__time col-12 col-lg-5">March 2017 to present</div>
+                <div class="timeline__period__job col-12 col-lg-5">
                     <h2>COLORLIB</h2>
                     <p>Senior Web Developer</p>
                     <p>Santa monica, Los angeles</p>
@@ -163,23 +236,25 @@
         </div>
     </section>
 
-    <section class="service">
-        <div class="service__header">
+    <section class="service container">
+        <div class="service__header ">
             <h1 style="text-align: center;">OFFERINGS TO MY CLIENTS</h1>
             <p style="text-align: center; ">If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.
 
             </p>
         </div>
-        <section class="service__feature clearfix">
-            <div class="service__feature__block">
+        <section class="service__feature row justify-content-between">
+            <div class="service__feature__block col-12 col-lg-4">
+                <a href="#"><i class="fal fa-building"></i></a>
                 <h3>ARCHITECTURE</h3>
                 <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
             </div>
-            <div class="service__feature__block">
+            <div class="service__feature__block col-12 col-lg-4">
+                <a href="#"><i class="fal fa-building"></i></a>
                 <h3>INTERIOR DESIGN</h3>
                 <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
             </div>
-            <div class="service__feature__block">
+            <div class="service__feature__block col-12 col-lg-4 ">
                 <h3>CONCEPT DESIGN</h3>
                 <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
             </div>
@@ -193,18 +268,35 @@
                 If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.
             </p>
         </div>
-        <section class="testi-list clearfix">
-            <div class="testi-list__item">
-                <p class="testi__content">As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
-                <h3 class="testi__author">Fanny Spencer</h3>
-            </div>
-            <div class="testi-list__item">
-                <p class="testi__content">As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
-                <h3 class="testi__author">Fanny Spencer</h3>
-            </div>
-            <div class="testi-list__item">
-                <p class="testi__content">As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
-                <h3 class="testi__author">Fanny Spencer</h3>
+        <section class="testi-list container">
+            <div class="row justify-content-between">
+                <div class="testi-list__item col-12 col-lg-4">
+                    <p class="testi__content">As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
+                    <h3 class="testi__author">Fanny Spencer</h3>
+                    <a href="#"><i class="fas fa-star"></i></a>
+                    <a href="#"><i class="fas fa-star"></i></a>
+                    <a href="#"><i class="fas fa-star"></i></a>
+                    <a href="#"><i class="fas fa-star"></i></a>
+                    <a href="#"><i class="fas fa-star-half-alt"></i></a>
+                </div>
+                <div class="testi-list__item col-12 col-lg-4">
+                    <p class="testi__content">As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
+                    <h3 class="testi__author">Fanny Spencer</h3>
+                    <a href="#"><i class="fas fa-star"></i></a>
+                    <a href="#"><i class="fas fa-star"></i></a>
+                    <a href="#"><i class="fas fa-star"></i></a>
+                    <a href="#"><i class="fas fa-star"></i></a>
+                    <a href="#"><i class="fas fa-star-half-alt"></i></a>
+                </div>
+                <div class="testi-list__item col-12 col-lg-4">
+                    <p class="testi__content">As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
+                    <h3 class="testi__author">Fanny Spencer</h3>
+                    <a href="#"><i class="fas fa-star"></i></a>
+                    <a href="#"><i class="fas fa-star"></i></a>
+                    <a href="#"><i class="fas fa-star"></i></a>
+                    <a href="#"><i class="fas fa-star"></i></a>
+                    <a href="#"><i class="fas fa-star-half-alt"></i></a>
+                </div>
             </div>
         </section>
 
@@ -218,44 +310,55 @@
             </p>
         </div>
         <nav class="project__menu">
-            <a class="project__menu__item" href="#">ALL</a>
-            <a class="project__menu__item" href="#">VECTOR</a>
-            <a class="project__menu__item" href="#">RASTER</a>
-            <a class="project__menu__item" href="#"> UI/UX</a>
-            <a class="project__menu__item" href="#"> PRINTING</a>
+            <a id="btnall" class="project__menu__item" href="#"
+                data-show="*">
+                ALL</a>
+            <a id="btnvector" class="project__menu__item" href="javascript: void(0)"
+                data-show="helmet,vinyl,embosed,disposable,logo">
+                VECTOR</a>
+            <a id="btnraster" class="project__menu__item" href="https://google.com"
+                data-show="helmet,vinyl,poster,disposable">
+                RASTER</a>
+            <a id="btnui" class="project__menu__item" href="javascript: void(0)"
+                data-show="vinyl,poster,embosed,logo">
+                 UI/UX</a>
+            <a id="btnprint" class="project__menu__item" href="javascript: void(0)"
+                data-show="helmet,disposable,poster">
+                 PRINTING</a>
         </nav>
-        <section class="project__showcase clearfix">
-            <div class="project__showcase__block">
-                <img src="../img/gallery/project-1.jpg">
-                <h2>3D Helmet Design</h2>
-                <p>Client Project</p>
+        <section class="project__showcase container">
+            <div class="row">
+                <div id="helmet" class="project__showcase__block col-12 col-lg-4">
+                    <img src="img/gallery/project-1.jpg">
+                    <h5>3D Helmet Design</h5>
+                    <p>Client Project</p>
+                </div>
+                <div id="vinyl" class="project__showcase__block col-12 col-lg-4">
+                    <img src="img/gallery/project-2.jpg">
+                    <h5>2D Vinyl Design</h5>
+                    <p>Client Project</p>
+                </div>
+                <div id="poster" class="project__showcase__block col-12 col-lg-4">
+                    <img src="img/gallery/project-3.jpg">
+                    <h5>Creative Poster Design</h5>
+                    <p>Client Project</p>
+                </div>
+                <div id="embosed" class="project__showcase__block col-12 col-lg-4">
+                    <img src="img/gallery/project-4.jpg">
+                    <h5>Embosed Logo Design</h5>
+                    <p>Client Project</p>
+                </div>
+                <div id="disposable" class="project__showcase__block col-12 col-lg-4">
+                    <img src="img/gallery/project-5.jpg">
+                    <h5>3D Disposable Bottle</h5>
+                    <p>Client Project</p>
+                </div>
+                <div id="logo" class="project__showcase__block col-12 col-lg-4">
+                    <img src="img/gallery/project-6.jpg">
+                    <h5>3D Logo Design</h5>
+                    <p>Client Project</p>
+                </div>
             </div>
-            <div class="project__showcase__block">
-                <img src="../img/gallery/project-2.jpg">
-                <h2>3D Helmet Design</h2>
-                <p>Client Project</p>
-            </div>
-            <div class="project__showcase__block">
-                <img src="../img/gallery/project-3.jpg">
-                <h2>3D Helmet Design</h2>
-                <p>Client Project</p>
-            </div>
-            <div class="project__showcase__block">
-                <img src="../img/gallery/project-4.jpg">
-                <h2>3D Helmet Design</h2>
-                <p>Client Project</p>
-            </div>
-            <div class="project__showcase__block">
-                <img src="../img/gallery/project-5.jpg">
-                <h2>3D Helmet Design</h2>
-                <p>Client Project</p>
-            </div>
-            <div class="project__showcase__block">
-                <img src="../img/gallery/project-6.jpg">
-                <h2>3D Helmet Design</h2>
-                <p>Client Project</p>
-            </div>
-
         </section>
         <div style="text-align: center;">
             <button class="experiences__loadmore">Load More Item</button>
@@ -263,23 +366,38 @@
     </section>
 
     <footer>
-        <div class="footer__content">
-            <div class="footer__aboutme">
-                <h2>About Me</h2>
-                <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
-                <p>Copyright ©2019 All rights reserved | This template is made with by <a href="#">Colorlib</a></p>
-            </div>
-            <div class="footer__newletter">
-                <h2>Newsletter</h2>
-                <p>Stay updated with our latest trends</p>
-            </div>
-            <div class="footer__fllow">
-                <h2>Follow Me</h2>
-                <p>Let us be social</p>
+        <div class="footer__content container">
+            <div class="row">
+                <div class="footer__aboutme col-12 col-lg-5">
+                    <h2>About Me</h2>
+                    <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
+                    <p>Copyright ©2019 All rights reserved | This template is made with by <a href="#">Colorlib</a></p>
+                </div>
+                <div class="footer__newletter col-12 col-lg-5">
+                    <h2>Newsletter</h2>
+                    <p>Stay updated with our latest trends</p>
+                </div>
+                <div class="footer__follow col-12 col-lg-2">
+                    <h2>Follow Me</h2>
+                    <p>Let us be social</p>
+                    <a href="#" style="color: white; font-weight: 5px;"> <i class="fab fa-facebook-f"></i></a>
+                    <a href="#" style="color: white; font-weight: 5px;"> <i class="fab fa-twitter"></i></a> 
+                    <a href="#" style="color: white; font-weight: 5px;"> <i class="fab fa-behance-square"></i></a> 
+                    <a href="#" style="color: white; font-weight: 5px;"> <i class="fas fa-globe"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="js/components/project.js"></script>
+    <script src="js/components/timeline-tree.js"></script>
+    <script src="js/components/about-form.js"></script>
+    <script src="js/learn.js"></script>
+    
 </body>
 
 </html>
