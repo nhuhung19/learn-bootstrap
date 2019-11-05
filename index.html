@@ -145,10 +145,14 @@
     </section>
 
     <section class="experiences contanier">
-        <button id="btnExp" class="experiences__button">My Experiences </button>
-        <button id="btnEdu" class="experiences__button">My Education</button>
+        <button id="btnExp" class="experiences__button"
+            data-show="timelineExp">
+        My Experiences </button>
+        <button id="btnEdu" class="experiences__button"
+            data-show="timelineEdu">
+        My Education</button>
 
-        <div id="timelineExp" class="timeline container">
+        <div id="timelineExp" class="timeline container d-none">
             <div class="timeline__column"></div>
 
             <div class="timeline__period row">
@@ -191,7 +195,7 @@
 
 
         </div>
-        <div id="timelineEdu" class="timeline container">
+        <div id="timelineEdu" class="timeline container d-none">
             <div class="timeline__column"></div>
 
             <div class="timeline__period row">
