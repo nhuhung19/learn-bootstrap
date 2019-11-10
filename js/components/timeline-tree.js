@@ -5,25 +5,20 @@ function initTimeline(){
     // let btnExp = document.querySelector('#btnExp')   
     // let btnEdu = document.querySelector('#btnEdu')
     let buttons = document.querySelectorAll('.experiences__button')
-
     // RW
     let timelines = document.querySelectorAll('.timeline')
     // let timelineExp = document.querySelector('#timelineExp')   
     // let timelineEdu = document.querySelector('#timelineEdu')
     let btnActive
-   
     // RW
     // highlight(btnEdu, btnExp)
     let firstBtn = buttons[0]
     highlight(null, firstBtn)
-
     // RW
     // hideTree(timelineEdu)
-
     // RW
     let firstTimeline = timelines[0]
     showTree(firstTimeline)
-    
     // RW
     // btnExp.addEventListener('click', () => {
     //     highlight(btnEdu,btnExp)
@@ -35,25 +30,20 @@ function initTimeline(){
     //     hideTree(timelineExp)
     //     showTree(timelineEdu)
     // })
-    
     for( let btn of buttons){
         btn.addEventListener('click', onClick)
     }
     function onClick(){
         let btnNew = event.target
         // highlight(btnActive, btnNew) // Run incorrectly
-        
         let strIDActive = btnActive.dataset.show
         let timelineActive = document.querySelector(`#${strIDActive}`)
         hideTree(timelineActive)
-        
         let strIDNew = btnNew.dataset.show
         let timelineNew = document.querySelector(`#${strIDNew}`)
         showTree(timelineNew)
-
         highlight(btnActive, btnNew)
     }
-    
     function activate(btn) {
         btn.classList.add('experiences__button--active')
     }
@@ -69,7 +59,6 @@ function initTimeline(){
         // ghi nhat ky
         btnActive = btnNew
     }
-    
     function hideTree(timeline){
         timeline.classList.add('d-none')
     }

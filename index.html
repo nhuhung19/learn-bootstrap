@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>project</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css-origin/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css-origin/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+    <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+    <link href="vendors/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/global.css" rel="stylesheet">
     <link href="css/appbar.css" rel="stylesheet">
@@ -15,12 +26,11 @@
     <link href="css/testimonial.css" rel="stylesheet">
     <link href="css/project.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
-    <link href="vendors/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
 </head>
 
 <body>
     <section class="appbar">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="#">MeetMe</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,9 +49,17 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Pages</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Blog</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
@@ -96,48 +114,51 @@
             </p>
             <div class="row  justify-content-between">
                 <div class="achievement-box col-12 col-lg-4">
+                    <i class="lnr lnr-database"></i>
                     <p class="achievement-box__figure">$2.5M</p>
                     <p class="achievement-box__desc">Total Donation</p>
                 </div>
                 <div class="achievement-box col-12 col-lg-4">
+                    <i class="lnr lnr-book"></i>
                     <p class="achievement-box__figure">1465</p>
                     <p class="achievement-box__desc">Total Projects</p>
                 </div>
                 <div class="achievement-box col-12 col-lg-4">
+                    <i class="lnr lnr-users"></i>
                     <p class="achievement-box__figure">3965</p>
                     <p class="achievement-box__desc">Total Volunteers</p>
                 </div>
             </div>
         </article>
-        <main class="main col-12 col-lg-6">
-            <p>After Effects 85%</p>
-            <div class="main__progress" style="width: 100%; height: 14px; border: 1px solid #eeeeee;; padding: 4px 2px 1px;">
-                <div class="main__progress" style="width: 100%; height: 10px; background: #777777;">
-                    <div class="main__progress" style="width: 85%; height: 10px; background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);"></div>
+        <main class="skillset col-12 col-lg-6">
+            <p>After Effects <span class="skillset__number">85</span>%</p>
+            <div class="skillset__progress-bar">
+                <div class="progress-bar__track" >
+                    <div class="progress-bar__value"  data-width="85%"></div>
                 </div>
             </div>
-            <p>Photoshop 90%</p>
-            <div class="main__progress" style="width: 100%; height: 14px; border: 1px solid #eeeeee;; padding: 4px 2px 1px;">
-                <div class="main__progress" style="width: 100%; height: 10px; background: #777777;">
-                    <div class="main__progress" style="width: 90%; height: 10px; background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);"></div>
+            <p>Photoshop <span class="skillset__number">90</span>%</p>
+            <div class="skillset__progress-bar" >
+                <div class="progress-bar__track" >
+                    <div class="progress-bar__value" data-width="90%"></div>
                 </div>
             </div>
-            <p>Illustrator 70%</p>
-            <div class="main__progress" style="width: 100%; height: 14px; border: 1px solid #eeeeee;; padding: 4px 2px 1px;">
-                <div class="main__progress" style="width: 100%; height: 10px; background: #777777;">
-                    <div class="main__progress" style="width: 70%; height: 10px; background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);"></div>
+            <p>Illustrator <span class="skillset__number">70</span>%</p>
+            <div class="skillset__progress-bar" >
+                <div class="progress-bar__track" >
+                    <div class="progress-bar__value" data-width="70%"></div>
                 </div>
             </div>
-            <p>Sublime 95%</p>
-            <div class="main__progress" style="width: 100%; height: 14px; border: 1px solid #eeeeee;; padding: 4px 2px 1px;">
-                <div class="main__progress" style="width: 100%; height: 10px; background: #777777;">
-                    <div class="main__progress" style="width: 95%; height: 10px; background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);"></div>
+            <p>Sublime <span class="skillset__number">95</span>%</p>
+            <div class="skillset__progress-bar" >
+                <div class="progress-bar__track" >
+                    <div class="progress-bar__value" data-width="95%"></div>
                 </div>
             </div>
-            <p>Sketch 75%</p>
-            <div class="main__progress" style="width: 100%; height: 14px; border: 1px solid #eeeeee;; padding: 4px 2px 1px;">
-                <div class="main__progress" style="width: 100%; height: 10px; background: #777777;">
-                    <div class="main__progress" style="width: 85%; height: 10px; background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);"></div>
+            <p>Sketch <span class="skillset__number">75</span>%</p>
+            <div class="skillset__progress-bar" >
+                <div class="progress-bar__track" >
+                    <div class="progress-bar__value" data-width="85%"></div>
                 </div>
             </div>
         </main>
@@ -249,16 +270,17 @@
         </div>
         <section class="service__feature row justify-content-between">
             <div class="service__feature__block col-12 col-lg-4">
-                <a href="#"><i class="fal fa-building"></i></a>
+                <i class="flaticon-city"></i>
                 <h3>ARCHITECTURE</h3>
                 <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
             </div>
             <div class="service__feature__block col-12 col-lg-4">
-                <a href="#"><i class="fal fa-building"></i></a>
+                <i class="flaticon-skyline"></i>
                 <h3>INTERIOR DESIGN</h3>
                 <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
             </div>
             <div class="service__feature__block col-12 col-lg-4 ">
+                <i class="flaticon-sketch"></i>
                 <h3>CONCEPT DESIGN</h3>
                 <p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
             </div>
@@ -274,32 +296,47 @@
         </div>
         <section class="testi-list container">
             <div class="row justify-content-between">
-                <div class="testi-list__item col-12 col-lg-4">
+                <div id="testi-1" class="testi-list__item col-12 col-lg-4">
                     <p class="testi__content">As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
                     <h3 class="testi__author">Fanny Spencer</h3>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star-half-alt"></i></a>
+                    <a data-index="0" class="btn-star" href="#">
+                        <i id="rating1-1" class="far fa-star"></i></a>
+                    <a data-index="1" class="btn-star" href="#">
+                        <i id="rating1-2" class="far fa-star"></i></a>
+                    <a data-index="2" class="btn-star" href="#">
+                        <i id="rating1-3" class="far fa-star"></i></a>
+                    <a data-index="3" class="btn-star" href="#">
+                        <i id="rating1-4" class="far fa-star"></i></a>
+                    <a data-index="4" class="btn-star" href="#">
+                        <i id="rating1-5" class="far fa-star"></i></a>
                 </div>
-                <div class="testi-list__item col-12 col-lg-4">
+                <div id="testi-2" class="testi-list__item col-12 col-lg-4">
                     <p class="testi__content">As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
                     <h3 class="testi__author">Fanny Spencer</h3>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star-half-alt"></i></a>
+                    <a data-index="0" class="btn-star" href="#">
+                        <i id="rating1-1" class="far fa-star"></i></a>
+                    <a data-index="1" class="btn-star" href="#">
+                        <i id="rating1-2" class="far fa-star"></i></a>
+                    <a data-index="2" class="btn-star" href="#">
+                        <i id="rating1-3" class="far fa-star"></i></a>
+                    <a data-index="3" class="btn-star" href="#">
+                        <i id="rating1-4" class="far fa-star"></i></a>
+                    <a data-index="4" class="btn-star" href="#">
+                        <i id="rating1-5" class="far fa-star"></i></a>
                 </div>
-                <div class="testi-list__item col-12 col-lg-4">
+                <div id="testi-3" class="testi-list__item col-12 col-lg-4">
                     <p class="testi__content">As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
                     <h3 class="testi__author">Fanny Spencer</h3>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star-half-alt"></i></a>
+                    <a data-index="0" class="btn-star" href="#">
+                        <i id="rating1-1" class="far fa-star"></i></a>
+                    <a data-index="1" class="btn-star" href="#">
+                        <i id="rating1-2" class="far fa-star"></i></a>
+                    <a data-index="2" class="btn-star" href="#">
+                        <i id="rating1-3" class="far fa-star"></i></a>
+                    <a data-index="3" class="btn-star" href="#">
+                        <i id="rating1-4" class="far fa-star"></i></a>
+                    <a data-index="4" class="btn-star" href="#">
+                        <i id="rating1-5" class="far fa-star"></i></a>
                 </div>
             </div>
         </section>
@@ -333,32 +370,63 @@
         <section class="project__showcase container">
             <div class="row">
                 <div id="helmet" class="project__showcase__block col-12 col-lg-4">
+                    <div class="project__showcase__block__img">
+                        <div class="project__showcase__overlay">
+                            <a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
+                        </div>
                     <img src="img/gallery/project-1.jpg">
+                </div>
                     <h5>3D Helmet Design</h5>
                     <p>Client Project</p>
+                    
                 </div>
                 <div id="vinyl" class="project__showcase__block col-12 col-lg-4">
-                    <img src="img/gallery/project-2.jpg">
+                        <div class="project__showcase__block__img">
+                            <div class="project__showcase__overlay">
+                                <a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
+                            </div>
+                            <img src="img/gallery/project-2.jpg">
+                        </div>
                     <h5>2D Vinyl Design</h5>
                     <p>Client Project</p>
                 </div>
                 <div id="poster" class="project__showcase__block col-12 col-lg-4">
-                    <img src="img/gallery/project-3.jpg">
+                        <div class="project__showcase__block__img">
+                            <div class="project__showcase__overlay">
+                                <a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
+                            </div>
+                            <img src="img/gallery/project-3.jpg">
+                        </div>
                     <h5>Creative Poster Design</h5>
                     <p>Client Project</p>
                 </div>
                 <div id="embosed" class="project__showcase__block col-12 col-lg-4">
-                    <img src="img/gallery/project-4.jpg">
+                    <div class="project__showcase__block__img">
+                        <div class="project__showcase__overlay">
+                            <a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
+                        </div>
+                        <img src="img/gallery/project-4.jpg">
+                    </div>
                     <h5>Embosed Logo Design</h5>
                     <p>Client Project</p>
                 </div>
                 <div id="disposable" class="project__showcase__block col-12 col-lg-4">
-                    <img src="img/gallery/project-5.jpg">
+                    <div class="project__showcase__block__img">
+                        <div class="project__showcase__overlay">
+                            <a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
+                        </div>
+                        <img src="img/gallery/project-5.jpg">
+                    </div>
                     <h5>3D Disposable Bottle</h5>
                     <p>Client Project</p>
                 </div>
                 <div id="logo" class="project__showcase__block col-12 col-lg-4">
-                    <img src="img/gallery/project-6.jpg">
+                    <div class="project__showcase__block__img">
+                        <div class="project__showcase__overlay">
+                            <a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
+                        </div>
+                        <img src="img/gallery/project-6.jpg">
+                    </div>
                     <h5>3D Logo Design</h5>
                     <p>Client Project</p>
                 </div>
@@ -380,14 +448,25 @@
                 <div class="footer__newletter col-12 col-lg-5">
                     <h2>Newsletter</h2>
                     <p>Stay updated with our latest trends</p>
+                    <div id="mc_embed_signup">
+                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                            <div class="input-group d-flex flex-row">
+                                <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+                            </div>				
+                            <div class="mt-10 info"></div>
+                        </form>
+                    </div>
                 </div>
                 <div class="footer__follow col-12 col-lg-2">
                     <h2>Follow Me</h2>
                     <p>Let us be social</p>
-                    <a href="#" style="color: white; font-weight: 5px;"> <i class="fab fa-facebook-f"></i></a>
-                    <a href="#" style="color: white; font-weight: 5px;"> <i class="fab fa-twitter"></i></a> 
-                    <a href="#" style="color: white; font-weight: 5px;"> <i class="fab fa-behance-square"></i></a> 
-                    <a href="#" style="color: white; font-weight: 5px;"> <i class="fas fa-globe"></i></a>
+                    <ul class="list">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -396,12 +475,13 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="js/components/appbar.js"></script>
     <script src="js/components/project.js"></script>
     <script src="js/components/timeline-tree.js"></script>
     <script src="js/components/about-form.js"></script>
+    <script src="js/components/rating.js"></script>
+    <script src="js/components/progress.js"></script>
     <script src="js/learn.js"></script>
-    
 </body>
 
 </html>

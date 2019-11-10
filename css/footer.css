@@ -8,13 +8,33 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
-
+.list {
+    list-style: none;
+}
 .footer__aboutme {
     /* float: left; */
     /* width: 457px; */
     /* margin: 0 10px;*/
 } 
-
+.list li {
+    display: inline-block;
+}
+.input-group .btn {
+    background-image: -webkit-linear-gradient(0deg, #766dff 0%, #88f3ff 100%);
+}
+.sub-btn {
+    color: white;
+}
+.input-group input {
+    width: 80%;
+    background: transparent;
+    border: 1px solid #1e233b;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    color: #cccccc;
+    outline: none;
+    box-shadow: none;
+}
 .footer__newletter {
     /* float: left; */
     /* width: 457px; */
