@@ -1,10 +1,12 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initAppbar()
+  initNavbar()
   initAboutForm()
   initTimeline()
   initProject()
-  initStar()
+  // initStar()
+  initTesti()
   initProgressBar()
   initProgressTitle()
 })

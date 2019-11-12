@@ -1,3 +1,44 @@
+async function initTesti(){
+
+    // lấy nội dung template
+    let source   = document.getElementById('tplTesti').innerHTML;
+    // compile template https://handlebarsjs.com/
+    let template = Handlebars.compile(source);
+    
+    // lấy data từ back-end
+    // dùng thư viện axious để lấy dữ liệu từ đường dẫn('...')
+    let response = await axios.get('/data/testi.json')
+    let testiArr = response.data
+    // data chứa dữ liệu từ back-end
+
+    // tạo ra html từ template
+    let html = ''
+    for(let testi of testiArr){
+        html += template(testi)
+        // html = html + template(testi)
+    }
+    
+    // gắn html vào DOM
+    let elTestiList = document.querySelector('#testiList')
+    elTestiList.innerHTML = html
+
+    // kích hoạt carousel
+    $(".testi-list").owlCarousel({
+        margin: 10,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            992: {
+                items: 3,
+            }
+        }
+    });
+
+    // xử lý rating
+    initStar()
+}
+
 function initStar(){
     /*
     let btn1_1 = document.querySelector("#star1-1")

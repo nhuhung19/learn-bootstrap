@@ -28,7 +28,7 @@ function initProgressBar(){
 
     let setValCount = 0 // Number of prog. bars with value
     const DEBOUNCE = 500 // ms
-    let timer
+    let timer // undefined
     // 3 bước tối ưu
     function onWindownScroll() {
         // Tối ưu 1: Deboucing
@@ -42,6 +42,7 @@ function initProgressBar(){
                     setProgressValue(elBar)
                     
                     //// Remove sự kiện sau khi set value cho tất cả progressbar
+                    // offWindowScroll()
                     setValCount++
                     console.log({setValCount})
                     if(setValCount === progressBars.length){
@@ -76,7 +77,9 @@ function initProgressBar(){
     }
 
 }
-
+let timeout
+const DEBOUNCE = 500
+let value = 0
 function initProgressTitle(){
     // 1. query tat ca skillset__number
     let skillNumbers = document.querySelectorAll('.skillset__number')
@@ -87,22 +90,33 @@ function initProgressTitle(){
     const NUM_STEP = 4
     const NUM_SPEED = 100 // ms
     function onScroll (){
-        for(let elNumber of skillNumbers ){
-            // 3. khi 1 element lo dien thi reset value=1, roi sau do' chay len value cu~
-            if(isInViewport(elNumber) && !alreadyRun(elNumber)){
-                let origNumb = Number(elNumber.innerHTML)
-                // let i = 1 // Magic number
-                let i = NUM_START
-                let timer = setInterval(()=>{
-                    if(i >= origNumb){
-                        clearInterval(timer)
-                        elNumber.setAttribute('data-run', 'true')
-                    }
-                    elNumber.innerHTML = i
-                    i = Math.min(origNumb, i + NUM_STEP)
-                }, NUM_SPEED)
-            }
+        if(timeout){
+            clearTimeout(timeout)
         }
+        timeout = setTimeout(() => {
+            for(let elNumber of skillNumbers ){
+                // 3. khi 1 element lo dien thi reset value=1, roi sau do' chay len value cu~
+                if(isInViewport(elNumber) && !alreadyRun(elNumber)){
+                    let origNumb = Number(elNumber.innerHTML)
+                    // let i = 1 // Magic number
+                    let i = NUM_START
+                    let timer = setInterval(()=>{
+                        if(i >= origNumb){
+                            clearInterval(timer)
+                            elNumber.setAttribute('data-run', 'true')
+                        }
+                        elNumber.innerHTML = i
+                        i = Math.min(origNumb, i + NUM_STEP)
+                    }, NUM_SPEED)
+                    value++
+                    console.log({value})
+                    if(value === skillNumbers.length){
+                        window.removeEventListener('scroll', onScroll)
+                    }
+                }
+            }
+        }, DEBOUNCE)
+        
     }
 
     const alreadyRun = (el) => el.hasAttribute('data-run')
@@ -124,3 +138,4 @@ function isInViewport(el){
         bot <= window.innerHeight //chiều cao phần nhìn thấy được của trình duyệt
     )
 }
+

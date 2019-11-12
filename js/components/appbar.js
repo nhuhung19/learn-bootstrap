@@ -28,3 +28,21 @@ function initAppbar(){
     }
 
 }
+
+function initNavbar(){
+    let appBar = document.querySelector('.appbar')
+    let navBar = appBar.querySelector('.navbar')
+    window.addEventListener('scroll', onScroll)
+
+    function onScroll(){
+        // khi scroll vuot qua chieu cao navbar
+        if(window.pageYOffset >= navBar.clientHeight){
+            appBar.classList.add('navbar--fixed')
+        }
+        else{
+            appBar.classList.remove('navbar--fixed')
+            
+        }
+    }
+
+}

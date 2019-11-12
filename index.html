@@ -294,8 +294,8 @@
                 If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.
             </p>
         </div>
-        <section class="testi-list container">
-            <div class="row justify-content-between">
+        <!-- <section class="testi-list container">
+            <div id="testi-container" class="row justify-content-between">
                 <div id="testi-1" class="testi-list__item col-12 col-lg-4">
                     <p class="testi__content">As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
                     <h3 class="testi__author">Fanny Spencer</h3>
@@ -339,11 +339,44 @@
                         <i id="rating1-5" class="far fa-star"></i></a>
                 </div>
             </div>
+        </section> -->
+        
+        <!-- Nội dung template để trong script tránh hiện lên màn hình -->
+        <script id="tplTesti" type="text/x-handlebars-template">
+            <div class="testi-list__item">
+                <p class="testi__content">{{content}}</p>
+                <h3 class="testi__author">{{author}}</h3>
+                <a data-index="0" class="btn-star" href="#">
+                    <i id="rating1-1" class="far fa-star"></i></a>
+                <a data-index="1" class="btn-star" href="#">
+                    <i id="rating1-2" class="far fa-star"></i></a>
+                <a data-index="2" class="btn-star" href="#">
+                    <i id="rating1-3" class="far fa-star"></i></a>
+                <a data-index="3" class="btn-star" href="#">
+                    <i id="rating1-4" class="far fa-star"></i></a>
+                <a data-index="4" class="btn-star" href="#">
+                    <i id="rating1-5" class="far fa-star"></i></a>
+            </div>
+        </script>
+        <section id="testiList" class="testi-list owl-carousel">
+            
         </section>
 
     </section>
-
+    
     <section class="project">
+        <script id="tplProject" type="text/x-handlebars-template">
+            <div id="{{id}}" class="project__showcase__block col-12 col-lg-4">
+                <div class="project__showcase__block__img">
+                    <div class="project__showcase__overlay">
+                        <a class="light" href="img/gallery/{{image}}"><img src="img/gallery/icon.png" alt=""></a>
+                    </div>
+                    <img src="img/gallery/{{image}}">
+                </div>
+                <h5>{{name}}</h5>
+                <p>{{type}}</p>
+            </div>
+        </script>
         <div class="project__header">
             <h1 style="text-align: center;">OUR LATEST FEATURED PROJECTS</h1>
             <p style="text-align: center; color: #777777;">Who are in extremely love with eco friendly system.
@@ -354,82 +387,9 @@
             <a id="btnall" class="project__menu__item" href="#"
                 data-show="*">
                 ALL</a>
-            <a id="btnvector" class="project__menu__item" href="javascript: void(0)"
-                data-show="helmet,vinyl,embosed,disposable,logo">
-                VECTOR</a>
-            <a id="btnraster" class="project__menu__item" href="https://google.com"
-                data-show="helmet,vinyl,poster,disposable">
-                RASTER</a>
-            <a id="btnui" class="project__menu__item" href="javascript: void(0)"
-                data-show="vinyl,poster,embosed,logo">
-                 UI/UX</a>
-            <a id="btnprint" class="project__menu__item" href="javascript: void(0)"
-                data-show="helmet,disposable,poster">
-                 PRINTING</a>
         </nav>
         <section class="project__showcase container">
             <div class="row">
-                <div id="helmet" class="project__showcase__block col-12 col-lg-4">
-                    <div class="project__showcase__block__img">
-                        <div class="project__showcase__overlay">
-                            <a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
-                        </div>
-                    <img src="img/gallery/project-1.jpg">
-                </div>
-                    <h5>3D Helmet Design</h5>
-                    <p>Client Project</p>
-                    
-                </div>
-                <div id="vinyl" class="project__showcase__block col-12 col-lg-4">
-                        <div class="project__showcase__block__img">
-                            <div class="project__showcase__overlay">
-                                <a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
-                            </div>
-                            <img src="img/gallery/project-2.jpg">
-                        </div>
-                    <h5>2D Vinyl Design</h5>
-                    <p>Client Project</p>
-                </div>
-                <div id="poster" class="project__showcase__block col-12 col-lg-4">
-                        <div class="project__showcase__block__img">
-                            <div class="project__showcase__overlay">
-                                <a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
-                            </div>
-                            <img src="img/gallery/project-3.jpg">
-                        </div>
-                    <h5>Creative Poster Design</h5>
-                    <p>Client Project</p>
-                </div>
-                <div id="embosed" class="project__showcase__block col-12 col-lg-4">
-                    <div class="project__showcase__block__img">
-                        <div class="project__showcase__overlay">
-                            <a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
-                        </div>
-                        <img src="img/gallery/project-4.jpg">
-                    </div>
-                    <h5>Embosed Logo Design</h5>
-                    <p>Client Project</p>
-                </div>
-                <div id="disposable" class="project__showcase__block col-12 col-lg-4">
-                    <div class="project__showcase__block__img">
-                        <div class="project__showcase__overlay">
-                            <a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
-                        </div>
-                        <img src="img/gallery/project-5.jpg">
-                    </div>
-                    <h5>3D Disposable Bottle</h5>
-                    <p>Client Project</p>
-                </div>
-                <div id="logo" class="project__showcase__block col-12 col-lg-4">
-                    <div class="project__showcase__block__img">
-                        <div class="project__showcase__overlay">
-                            <a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
-                        </div>
-                        <img src="img/gallery/project-6.jpg">
-                    </div>
-                    <h5>3D Logo Design</h5>
-                    <p>Client Project</p>
-                </div>
             </div>
         </section>
         <div style="text-align: center;">
@@ -475,12 +435,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.min.js"></script>
     <script src="js/components/appbar.js"></script>
     <script src="js/components/project.js"></script>
     <script src="js/components/timeline-tree.js"></script>
     <script src="js/components/about-form.js"></script>
     <script src="js/components/rating.js"></script>
-    <script src="js/components/progress.js"></script>
+    <script src="js/components/testimonial.js"></script>
+    <script src="js/components/progress-remake.js"></script>
     <script src="js/learn.js"></script>
 </body>
 

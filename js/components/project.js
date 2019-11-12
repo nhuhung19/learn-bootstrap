@@ -1,4 +1,45 @@
-function initProject(){
+async function initProject(){   
+   let response = await axios.get('/data/projects.json')
+   let IDs = response.data.projects.map(
+      p => p.name.toLowerCase().replace(/\s/g, '-')
+   )
+
+   buildProjectButtons(response.data.categories, IDs)
+   buildProjectList(response.data.projects, IDs)
+   initProjectBehavior()
+}
+
+function buildProjectButtons(categories, IDs) {
+   let buttonElements = categories.map(cate => {
+      let button = document.createElement('a')
+      button.textContent = cate.name
+      button.classList.add('project__menu__item')
+      button.setAttribute('id', `btn${cate.name}`)
+      button.setAttribute('href', '#')
+
+      let projectIDs = cate.projects.map(idx => IDs[idx])
+      button.setAttribute('data-show', projectIDs.join())
+      return button
+   })
+   document.querySelector('.project__menu').append(...buttonElements)
+}
+
+function buildProjectList(projects, IDs){
+   // let projects = respone.data.projects
+   let source = document.querySelector('#tplProject').innerHTML
+   let template = Handlebars.compile(source)
+   let html = ''
+   for(let i = 0; i < projects.length; i++){
+      html += template({
+         id: IDs[i],
+         ...projects[i],
+      })
+   }
+    let elProject = document.querySelector('.project__showcase .row')
+    elProject.innerHTML = html
+}
+
+function initProjectBehavior(){
 
    let projectButtons = document.querySelectorAll(".project__menu__item")
    let projectBlocks = document.querySelectorAll(".project__showcase__block")

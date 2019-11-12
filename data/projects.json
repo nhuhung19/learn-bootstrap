@@ -1,0 +1,53 @@
+{
+    "projects": [
+        {
+            "name": "3D Helmet Design",
+            "type": "Client Project",
+            "image": "project-1.jpg"
+        },
+        {
+            "name": "2D Vinyl Design",
+            "type": "Client Project",
+            "image": "project-2.jpg"
+        },
+        {
+            "name": "Creative Poster Design",
+            "type": "Client Project",
+            "image": "project-3.jpg"
+        },
+        {
+            "name": "Embosed Logo Design",
+            "type": "Client Project",
+            "image": "project-4.jpg"
+        },
+        {
+            "name": "3D Disposable Bottle",
+            "type": "Client Project",
+            "image": "project-5.jpg"
+        },
+        {
+            "name": "3D Logo Design",
+            "type": "Client Project",
+            "image": "project-6.jpg"
+        }
+    ],
+    "categories": [
+        {
+            "name": "Vector",
+            "projects": [0, 1, 2]
+        },
+        {
+            "name": "Raster",
+            "projects": [0, 1, 2, 4]
+        },
+        {
+            "name": "UI/UX",
+            "projects": [1, 2, 4, 5]
+        },
+        {
+            "name": "Printing",
+            "projects": [0, 1, 3]
+        }
+    ]
+
+}

@@ -125,5 +125,21 @@
         background-color: transparent;
         position: static;
     }
+        
+    .navbar--fixed .navbar {
+        background-color: black;
+        position: fixed;
+        top: -74px;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        width: 100%;
+        height: auto;
+        transform: translateY(74px);
+        transition: transform 0.5s ease, background-color 1s ease;
+    }
 
+    .appbar.navbar--fixed {
+        padding-top: 148px;
+    }
 }
